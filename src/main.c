@@ -9,11 +9,11 @@ int main(int argc, char* argv[]) {
 	int upper_bound_check = 0;
 
 	for (int i = 1; i < argc; i++) {
-		if (strcmp(argv[i], "--lower_bound=", 14) == 0) {
+		if (strncmp(argv[i], "--lower_bound=", 14) == 0) {
 			lower_bound = atoi(argv[i] + 14);
 			lower_bound_check = 1;
 		}
-		else if (strcmp(argv[i], "--upper_bound=", 14) == 0) {
+		else if (strncmp(argv[i], "--upper_bound=", 14) == 0) {
 			upper_bound = atoi(argv[i] + 14);
 			upper_bound_check = 1;
 		}
