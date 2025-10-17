@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include <unistd.h>
+#include <string.h>
 
 int main(int argc, char* argv[]) {
 	int lower_bound = 0;
@@ -42,6 +42,7 @@ int main(int argc, char* argv[]) {
 	for (int i = lower_bound; i <= upper_bound; i++) {
 		printf("%d ", i);
 	}
+	printf("\n");
 
 	return 0;
 }
