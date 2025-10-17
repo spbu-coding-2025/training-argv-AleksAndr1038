@@ -20,22 +20,22 @@ int main(int argc, char* argv[]) {
 	}
 
 	if (!lower_bound_check) {
-		fprintf(stderr, "Flag --lower_bound is missing\n");
+		fprintf(stderr, "Flag --lower_bound is missing.\n");
 		return 1;
 	}
 
 	if (!upper_bound_check) {
-		fprintf(stderr, "Flag --upper_bound is missing\n");
+		fprintf(stderr, "Flag --upper_bound is missing.\n");
 		return 1;
 	}
 
 	if (!lower_bound_check && !upper_bound_check) {
-		fprintf(stderr, "No flags found\n");
+		fprintf(stderr, "No flags found.\n");
 		return 1;
 	}
 
 	if (lower_bound > upper_bound) {
-		fprintf(stderr, "The lower bound is greater than the upper bound\n");
+		fprintf(stderr, "The lower bound is greater than the upper bound.\n");
 		return 1;
 	}
 
